@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>forEach</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：forEach() 方法用于调用数组的每个元素，并将元素传递给回调函数。
+    注意：forEach() 对于空数组是不会执行回调函数的。
+    语法：array.forEach(function(currentValue, index, arr), thisValue)
+    参数：function(currentValue,index,arr)      必须。函数，数组中的每个元素都会执行这个函数函数参数。
+                                                currentValue      必须。当前元素的值
+                                                index	            可选。当前元素的索引值
+                                                arr	              可选。当前元素属于的数组对象
+          thisValue     可选。 传递给函数的值一般用 "this" 值。如果这个参数为空， "undefined" 会传递给 "this" 值
+    返回值：没有返回值
+     */
+    let arr1 = [45, 73, 6, 43, 85, 23, 5, 75, 7, 8, 56, 66];
+    arr1.forEach(function (item, index) {
+      console.log(`您今年${item}岁，${item >= 18 ? '已成年' : '未成年'}`);
+      arr1[index] = item + 1      //可以通过索引修改自身的值
+    });
+    console.log(arr1)      //[46, 74, 7, 44, 86, 24, 6, 76, 8, 9, 57, 67]
+  </script>
+</body>
+</html>
