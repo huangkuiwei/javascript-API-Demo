@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>entries</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：entries() 方法返回一个数组的迭代对象，该对象包含数组的键值对 (key/value)。
+          迭代对象中数组的索引值作为 key，数组元素作为 value。
+    语法：array.entries()。
+    参数：无
+    返回值：数组迭代对象。
+     */
+    let arr1 = ['apple', 'orange', 'banner'];
+    let newArr1 = arr1.entries();
+    console.log(newArr1.next().value);      //[0, 'apple']
+    console.log(newArr1.next().value);      //[1, 'orange']
+    console.log(newArr1.next().value)       //[2, 'banner']
+  </script>
+</body>
+</html>
