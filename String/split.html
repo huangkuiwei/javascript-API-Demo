@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>split</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：split() 方法用于把一个字符串分割成字符串数组。
+    注意：如果把空字符串 ("") 用作 separator，那么 stringObject 中的每个字符之间都会被分割。
+          split() 方法不改变原始字符串。
+    语法：string.split(separator,limit)
+    参数：separator	      可选。字符串或正则表达式，从该参数指定的地方分割 string Object。
+          limit	          可选。该参数可指定返回的数组的最大长度。如果设置了该参数，返回的子串不会多于这个参数指定的数组。
+                                如果没有设置该参数，整个字符串都会被分割，不考虑它的长度。
+    返回值：Array	一个字符串数组。该数组是通过在 separator 指定的边界处将字符串 string Object 分割成子串创建的。
+            返回的数组中的字串不包括 separator 自身。
+     */
+    let s = 'hello world';
+    console.log(s.split(' '));      //['hello', 'world']
+    console.log(s.split(''))        //["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]
+  </script>
+</body>
+</html>
