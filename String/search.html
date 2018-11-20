@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>search</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：search() 方法执行正则表达式和 String对象之间的一个搜索匹配。
+    语法：str.search(regexp)
+    参数：regexp     必选。一个正则表达式（regular expression）对象。如果传入一个非正则表达式对象，
+                           则会使用 new RegExp(obj) 隐式地将其转换为正则表达式对象。
+    返回值：如果匹配成功，则 search() 返回正则表达式在字符串中首次匹配项的索引。否则，返回 -1。
+     */
+    let a = 'this is a text';
+    console.log(a.search('is'));       //2
+    console.log(a.search(/is/))        //2
+  </script>
+</body>
+</html>
