@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>replace</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
+    注意：该方法不会改变原始字符串。
+    语法：string.replace(searchvalue,newvalue)
+    参数：searchvalue	      必须。规定子字符串或要替换的模式的 RegExp 对象。
+                                  请注意，如果该值是一个字符串，则将它作为要检索的直接量文本模式，而不是首先被转换为 RegExp 对象。
+          newvalue	        必需。一个字符串值。规定了替换文本或生成替换文本的函数。
+    返回值：String	一个新的字符串，是用 replacement 替换了 regexp 的第一次匹配或所有匹配之后得到的。
+     */
+    let s = 'this is a text';
+    console.log(s.replace('this', 'that'));         //that is a text
+    console.log(s.replace(/is/g, '12'))             //th12 12 a text
+  </script>
+</body>
+</html>
