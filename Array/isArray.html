@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>isArray</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：isArray() 方法用于判断一个对象是否为数组。
+    语法：Array.isArray(obj)
+    参数：obj	必需，要判断的对象。
+    返回值：如果对象是数组返回 true，否则返回 false。
+     */
+    let arr1 = [];
+    let obj = {};
+    if (Array.isArray(arr1)) {         //数组
+      console.log('数组')
+    } else {
+      console.log('非数组')
+    }
+    if (Array.isArray(obj)) {         //非数组
+      console.log('数组')
+    } else {
+      console.log('非数组')
+    }
+  </script>
+</body>
+</html>
