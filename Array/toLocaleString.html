@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>toLocaleString</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：把数组转换为本地字符串。不会改变原数组。
+    注意：首先调用每个数组元素的 toLocaleString() 方法，然后使用地区特定的分隔符把生成的字符串连接起来，形成一个字符串。
+    语法：arrayObject.toLocaleString()
+    参数：无
+    返回值：arrayObject 的本地字符串表示。
+     */
+    let arr1 = [1, 2, 3, 4, 5, 6];
+    let s = arr1.toLocaleString();
+    console.log(s);       //1,2,3,4,5,6
+    console.log(arr1)     //[1, 2, 3, 4, 5, 6]
+  </script>
+</body>
+</html>
