@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>输入日期推算出是星期几</title>
+  <style>
+    input {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text"> 年
+    <input type="text"> 月
+    <input type="text"> 日
+    <button id="btn">星期几?</button>
+  </div>
+
+  <script>
+    //获取三个input框
+    let input = document.getElementsByTagName("input");
+    let btn = document.getElementById('btn');
+    //给按钮添加点击事件
+    btn.onclick = function () {
+      //初始化时间   程序里面的月份为0~11月，所以要减1
+      let d = new Date(+input[0].value, +input[1].value - 1, +input[2].value, 23, 59, 59);
+      //判断用户是否完整输入
+      if (!input[0].value || !input[1].value || !input[2].value) {
+        alert('请完成必填项')
+      } else {
+        if (!d.getDay()) {        //0 表示星期天
+          alert('今天是星期天')
+        } else {
+          alert('今天是星期' + d.getDay())
+        }
+      }
+    }
+  </script>
+</body>
+</html>
