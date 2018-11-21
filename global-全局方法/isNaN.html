@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>isNaN</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：isNaN() 函数用于检查其参数是否是非数字值。如果参数值为 NaN 或字符串、对象、undefined等非数字值则返回 true, 否则返回 false。
+    语法：isNaN(value)
+    参数：value	必需。要检测的值。
+     */
+    let s1 = '123';
+    let s2 = 123;
+    let s3 = '123hello';
+    let s4 = true;
+    let s5 = false;
+    console.log(isNaN(s1));         //false
+    console.log(isNaN(s2));         //false
+    console.log(isNaN(s3));         //true
+    console.log(isNaN(s4));         //false
+    console.log(isNaN(s5))          //false
+  </script>
+</body>
+</html>

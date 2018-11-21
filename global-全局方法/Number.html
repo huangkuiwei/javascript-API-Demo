@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：Number() 函数把对象的值转换为数字。如果对象的值无法转换为数字，那么 Number() 函数返回 NaN。
+    注意：如果参数是 Date 对象，Number() 返回从 1970 年 1 月 1 日至今的毫秒数。
+    语法：Number(object)
+    参数：object	    可选。一个 JavaScript 对象。如果没有提供参数，则返回0。
+     */
+    let s1 = 123;
+    let s2 = '123';
+    let s3 = '12hello';
+    let s4 = new Date();
+    let s5 = '111 222';
+    let s6 = true;
+    let s7 = false;
+    console.log(Number(s1));        //123
+    console.log(Number(s2));        //123
+    console.log(Number(s3));        //NaN
+    console.log(Number(s4));        //1542768130483
+    console.log(Number(s5));        //NaN
+    console.log(Number(s6));        //1
+    console.log(Number(s7))         //0
+  </script>
+</body>
+</html>
