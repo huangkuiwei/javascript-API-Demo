@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>parseFloat</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：parseFloat() 函数可解析一个字符串，并返回一个浮点数。该函数指定字符串中的首个字符是否是数字。
+          如果是，则对字符串进行解析，直到到达数字的末端为止，然后以数字返回该数字，而不是作为字符串。
+    注意：字符串中只返回第一个数字。
+          开头和结尾的空格是允许的。
+          如果字符串的第一个字符不能被转换为数字，那么 parseFloat() 会返回 NaN。
+    语法：parseFloat(string)
+    参数：string	  必需。要被解析的字符串。
+     */
+    console.log(parseFloat('10'));            //10
+    console.log(parseFloat(10.12));           //10.12
+    console.log(parseFloat('12hello'));       //12
+    console.log(parseFloat(' 12 '));          //12
+    console.log(parseFloat('hello world'))    //NaN
+  </script>
+</body>
+</html>

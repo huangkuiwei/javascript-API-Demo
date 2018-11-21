@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>parseInt</title>
+</head>
+<body>
+  <script>
+    console.log(parseInt(10));                //10
+    console.log(parseInt('10'));              //10
+    console.log(parseInt(' 10 '));            //10
+    console.log(parseInt('hello world'));     //NaN
+    console.log(parseInt('12hello'));         //12
+    console.log(parseInt(true));              //NaN
+    console.log(parseInt(false));             //NaN
+    console.log(parseInt(0.0000000001));       //1
+    console.log(parseInt(12.12))               //12
+  </script>
+</body>
+</html>

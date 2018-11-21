@@ -11,16 +11,11 @@
     语法：isNaN(value)
     参数：value	必需。要检测的值。
      */
-    let s1 = '123';
-    let s2 = 123;
-    let s3 = '123hello';
-    let s4 = true;
-    let s5 = false;
-    console.log(isNaN(s1));         //false
-    console.log(isNaN(s2));         //false
-    console.log(isNaN(s3));         //true
-    console.log(isNaN(s4));         //false
-    console.log(isNaN(s5))          //false
+    console.log(isNaN('123'));          //false
+    console.log(isNaN(123));            //false
+    console.log(isNaN('123hello'));     //true
+    console.log(isNaN(true));           //false
+    console.log(isNaN(false))           //false
   </script>
 </body>
 </html>

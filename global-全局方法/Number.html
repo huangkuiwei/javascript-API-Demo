@@ -12,20 +12,15 @@
     语法：Number(object)
     参数：object	    可选。一个 JavaScript 对象。如果没有提供参数，则返回0。
      */
-    let s1 = 123;
-    let s2 = '123';
-    let s3 = '12hello';
-    let s4 = new Date();
-    let s5 = '111 222';
-    let s6 = true;
-    let s7 = false;
-    console.log(Number(s1));        //123
-    console.log(Number(s2));        //123
-    console.log(Number(s3));        //NaN
-    console.log(Number(s4));        //1542768130483
-    console.log(Number(s5));        //NaN
-    console.log(Number(s6));        //1
-    console.log(Number(s7))         //0
+    console.log(Number(123));               //123
+    console.log(Number('123'));             //123
+    console.log(Number('12hello'));         //NaN
+    console.log(Number(new Date()));        //1542768130483
+    console.log(Number('111 222'));         //NaN
+    console.log(Number(true));              //1
+    console.log(Number(false));             //0
+    console.log(Number(' 111 '));           //111
+    console.log(Number(''))                 //0
   </script>
 </body>
 </html>
