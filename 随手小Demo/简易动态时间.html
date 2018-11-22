@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>简易动态时间</title>
+</head>
+<body>
+  <script>
+    //获取body
+    let body = document.body;
+    setInterval(function () {
+      //初始化时间
+      let d = new Date();
+      let year = d.getFullYear();
+      let month = d.getMonth() + 1 > 9 ? d.getMonth() + 1 : '0' + (d.getMonth() + 1);
+      let date = d.getDate() > 9 ? d.getDate() : '0' + d.getDate();
+      let hours = d.getHours() > 9 ? d.getHours() : '0' + d.getHours();
+      let minutes = d.getMinutes() > 9 ? d.getMinutes() : '0' + d.getMinutes();
+      let seconds = d.getSeconds() > 9 ? d.getSeconds() : '0' + d.getSeconds();
+      //修改body中的节点
+      body.innerHTML = `现在是北京时间：${year}年${month}月${date}日${hours}:${minutes}:${seconds}`
+    }, 0)
+  </script>
+</body>
+</html>
