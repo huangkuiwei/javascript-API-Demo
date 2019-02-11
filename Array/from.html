@@ -15,7 +15,13 @@
     返回值：数组对象。
      */
     let arr1 = Array.from('abc');
+    let arr2 = Array.from([1, 2, 3]);
     console.log(arr1);        //['a', 'b', 'c']
+    console.log(arr2);        //[1, 2, 3]
+    let fn = function (a, b, c) {
+      console.log(Array.from(arguments))    //[10, 20, 30]
+    };
+    fn(10, 20, 30)
   </script>
 </body>
 </html>

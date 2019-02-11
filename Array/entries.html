@@ -20,9 +20,11 @@
     //   console.log(item)
     // }
 
-    console.log(newArr1.next().value);      //[0, 'apple']
+    console.log(newArr1);                   //返回一个数组迭代器
+    console.log(newArr1.next());            //{value: [0, 'apple'], done: false}
     console.log(newArr1.next().value);      //[1, 'orange']
-    console.log(newArr1.next().value)       //[2, 'banner']
+    console.log(newArr1.next().value);      //[2, 'banner']
+    console.log(newArr1.next())             //{value: undefined, done: true}
   </script>
 </body>
 </html>
