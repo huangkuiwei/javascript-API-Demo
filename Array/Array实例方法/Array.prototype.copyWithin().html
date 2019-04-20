@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array.prototype.copyWithin()</title>
+</head>
+<body>
+  <script>
+    /*
+    作用：copyWithin() 方法用于从数组的指定位置拷贝元素到数组的另一个指定位置中（会覆盖原有成员），会改变原来的数组。
+    语法：array.copyWithin(target, start, end)。
+    参数：target     	必需。从该位置开始替换数据。
+          start     	可选。从该位置开始读取数据，默认为 0 。如果为负值，表示倒数。
+          end	        可选。到该位置前停止读取数据，默认等于数组长度。如果为负值，表示倒数。
+    返回值：新生成的数组。
+     */
+    let arr1 = ["Banana", "Orange", "Apple", "Mango"];
+    let arr2 = [1, 2, 3, 4, 5];
+    arr1.copyWithin(2, 0);
+    arr2.copyWithin(0, 2, 3);
+    console.log(arr1);     //["Banana", "Orange", "Banana", "Orange"]
+    console.log(arr2)      //[3, 2, 3, 4, 5]
+  </script>
+</body>
+</html>

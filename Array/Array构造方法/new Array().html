@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>new Array()</title>
+</head>
+<body>
+  <script>
+    // Array是 JavaScript 的原生对象，同时也是一个构造函数，可以用它生成新的数组。
+    // Array构造函数有一个很大的缺陷，就是不同的参数，会导致它的行为不一致。
+    // 可以看到，Array作为构造函数，行为很不一致。因此，不建议使用它生成新数组，直接使用数组字面量是更好的做法。
+    // 注意，如果参数是一个正整数，返回数组的成员都是空位。
+    // 虽然读取的时候返回undefined，但实际上该位置没有任何值。虽然可以取到length属性，但是取不到键名。
+    console.log(new Array());                 // []
+    console.log(new Array(2));                // [empty × 2]，length = 2
+    // console.log(new Array(3.3));           // 报错
+    // console.log(new Array(-3));            // 报错
+    console.log(new Array('abc'));            // ["abc"]
+    console.log(new Array(1, 2, 3));          // [1, 2, 3]
+    console.log(new Array('a', 'b', 'c'))     // ["a", "b", "c"]
+  </script>
+</body>
+</html>
