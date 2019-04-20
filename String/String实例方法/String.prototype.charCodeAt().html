@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>charCodeAt</title>
+  <title>String.prototype.charCodeAt()</title>
 </head>
 <body>
   <script>
@@ -11,6 +11,7 @@
     语法：string.charCodeAt(index)
     参数：index	      必需。表示字符串中某个位置的数字，即字符在字符串中的下标。
     返回值：Number	  返回在指定的位置的字符的 Unicode 编码。
+    注意：如果参数为负数，或大于等于字符串的长度，charCodeAt返回NaN。
      */
     let s = 'hello';
     console.log(s.charCodeAt(2))      //108

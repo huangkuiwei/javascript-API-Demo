@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>slice</title>
+  <title>String.prototype.slice()</title>
 </head>
 <body>
   <script>
@@ -12,6 +12,7 @@
           字符串中第一个字符位置为 0, 第二个字符位置为 1, 以此类推。
     注意：如果是负数，则该参数规定的是从字符串的尾部开始算起的位置。
           也就是说，-1 指字符串的最后一个字符，-2 指倒数第二个字符，以此类推。
+          如果第一个参数大于第二个参数，slice方法返回一个空字符串。
     语法：string.slice(start,end)
     参数：start	      必须. 要抽取的片断的起始下标。第一个字符位置为 0
           end	        可选。紧接着要截取的片段结尾的下标。若未指定此参数，则要提取的子串包括 start 到原字符串结尾的字符串。
@@ -19,8 +20,8 @@
     返回值：String	提取的字符串。
      */
     let s = 'hello world';
-    console.log(s.slice(1, 4));      //ell
-    console.log(s.slice(-2, -1))      //l
+    console.log(s.slice(1, 4));       // ell
+    console.log(s.slice(-2, -1))      // l
   </script>
 </body>
 </html>
