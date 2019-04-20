@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object.create()</title>
+</head>
+<body>
+  <script>
+    // 该方法可以指定原型对象和属性，返回一个新的对象。
+    let obj1 = Object.create(null);
+    console.log(obj1);                      // {} 此对象没有原型
+    let obj2 = new Object({name: 'huang'});
+    let obj3 = Object.create(obj2);
+    console.log(obj3)                       // {} 此对象继承自obj2
+  </script>
+</body>
+</html>
