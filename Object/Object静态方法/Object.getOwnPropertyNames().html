@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Object.getOwnPropertyNames()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Object.getOwnPropertyNames()</title>
+  </head>
+  <body>
+    <script>
     // Object.getOwnPropertyNames方法与Object.keys类似，也是接受一个对象作为参数，返回一个数组，包含了该对象自身的所有属性名。
     // Object.getOwnPropertyNames方法返回可枚举和不可枚举的属性名。
-    let obj = {name: '张三', age: 24, address: '长沙', email: '123456@qq.com'};
-    console.log(Object.getOwnPropertyNames(obj));       // ["name", "age", "address", "email"]
-    let arr = ['hello', 'world'];
+    let obj = { name: '张三', age: 24, address: '长沙', email: '123456@qq.com' }
+    console.log(Object.getOwnPropertyNames(obj))       // ["name", "age", "address", "email"]
+    let arr = ['hello', 'world']
     console.log(Object.getOwnPropertyNames(arr))        // ["0", "1", "length"]
-  </script>
-</body>
+    </script>
+  </body>
 </html>

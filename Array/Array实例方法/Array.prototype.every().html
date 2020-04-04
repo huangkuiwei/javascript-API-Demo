@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Array.prototype.every()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.every()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：every() 方法用于检测数组所有元素是否都符合指定条件（通过函数提供）。
           every() 方法使用指定函数检测数组中的所有元素：如果数组中检测到有一个元素不满足，
@@ -19,15 +19,15 @@
                         如果省略了 thisValue ，"this" 的值为 "undefined"
     注意：every() 不会对空数组进行检测。 every() 不会改变原始数组。
      */
-    let arr1 = [1, 2, 3, 4];
+    let arr1 = [1, 2, 3, 4]
     let a = arr1.every(function (item) {
       return item > 3
-    });
-    console.log(a);      //false 判断arr1数组中的值是否都大于3
+    })
+    console.log(a)      //false 判断arr1数组中的值是否都大于3
     let b = arr1.every(function (item) {
       return item > 0
-    });
+    })
     console.log(b)       //true 判断arr1数组中的值是否都大于0
-  </script>
-</body>
+    </script>
+  </body>
 </html>

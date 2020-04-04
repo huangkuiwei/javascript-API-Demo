@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Object​.prototype​.isPrototypeOf()</title>
-</head>
-<body>
-  <script>
-    function People(name, age) {
-      this.name = name;
+  <head>
+    <meta charset="UTF-8">
+    <title>Object​.prototype​.isPrototypeOf()</title>
+  </head>
+  <body>
+    <script>
+    function People (name, age) {
+      this.name = name
       this.age = age
     }
 
-    let p = new People('huang', 24);
+    let p = new People('huang', 24)
     // 检测原始类型的值都返回 false
-    console.log(People.prototype.isPrototypeOf(p));    // true
-    console.log(Object.prototype.isPrototypeOf(p));    // true
-    console.log(Array.prototype.isPrototypeOf([]));    // true
+    console.log(People.prototype.isPrototypeOf(p))    // true
+    console.log(Object.prototype.isPrototypeOf(p))    // true
+    console.log(Array.prototype.isPrototypeOf([]))    // true
     console.log(Array.prototype.isPrototypeOf({}))     // false
-  </script>
-</body>
+    </script>
+  </body>
 </html>

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>new Date()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>new Date()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：获取指定时间，主要有一下几种格式。
     返回值：返回一个转换后的Date对象
      */
-    console.log(new Date());                          //Thu Nov 22 2018 09:31:49 GMT+0800 (中国标准时间)
-    console.log(new Date('2017-10-10'));              //Tue Oct 10 2017 08:00:00 GMT+0800 (中国标准时间)
-    console.log(new Date('2017-10-10 10:10:10'));     //Tue Oct 10 2017 10:10:10 GMT+0800 (中国标准时间)
-    console.log(new Date('2017/10/10'));              //Tue Oct 10 2017 00:00:00 GMT+0800 (中国标准时间)
-    console.log(new Date('2017/10/10 10:10:10'));     //Tue Oct 10 2017 10:10:10 GMT+0800 (中国标准时间)
-    console.log(new Date(2017, 10, 10));              //Fri Nov 10 2017 00:00:00 GMT+0800 (中国标准时间)
-    console.log(new Date(2017, 10, 10, 10, 10, 10));  //Fri Nov 10 2017 10:10:10 GMT+0800 (中国标准时间)
-    console.log(new Date(1000 * 60 * 10));            //Thu Jan 01 1970 08:10:00 GMT+0800 (中国标准时间)
+    console.log(new Date())                          //Thu Nov 22 2018 09:31:49 GMT+0800 (中国标准时间)
+    console.log(new Date('2017-10-10'))              //Tue Oct 10 2017 08:00:00 GMT+0800 (中国标准时间)
+    console.log(new Date('2017-10-10 10:10:10'))     //Tue Oct 10 2017 10:10:10 GMT+0800 (中国标准时间)
+    console.log(new Date('2017/10/10'))              //Tue Oct 10 2017 00:00:00 GMT+0800 (中国标准时间)
+    console.log(new Date('2017/10/10 10:10:10'))     //Tue Oct 10 2017 10:10:10 GMT+0800 (中国标准时间)
+    console.log(new Date(2017, 10, 10))              //Fri Nov 10 2017 00:00:00 GMT+0800 (中国标准时间)
+    console.log(new Date(2017, 10, 10, 10, 10, 10))  //Fri Nov 10 2017 10:10:10 GMT+0800 (中国标准时间)
+    console.log(new Date(1000 * 60 * 10))            //Thu Jan 01 1970 08:10:00 GMT+0800 (中国标准时间)
     //比较大小
-    let d1 = new Date('2017/10/10');
-    let d2 = new Date('2017/08/08');
-    console.log(d1 > d2);                              // true
+    let d1 = new Date('2017/10/10')
+    let d2 = new Date('2017/08/08')
+    console.log(d1 > d2)                              // true
     console.log(d1 - d2)                               // 5443200000
-  </script>
-</body>
+    </script>
+  </body>
 </html>

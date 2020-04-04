@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>String.prototype.replace()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>String.prototype.replace()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
     注意：该方法不会改变原始字符串。
@@ -15,9 +15,9 @@
           newvalue	        必需。一个字符串值。规定了替换文本或生成替换文本的函数。
     返回值：String	一个新的字符串，是用 replacement 替换了 regexp 的第一次匹配或所有匹配之后得到的。
      */
-    let s = 'this is a text';
-    console.log(s.replace('this', 'that'));         //that is a text
+    let s = 'this is a text'
+    console.log(s.replace('this', 'that'))         //that is a text
     console.log(s.replace(/is/g, '12'))             //th12 12 a text
-  </script>
-</body>
+    </script>
+  </body>
 </html>

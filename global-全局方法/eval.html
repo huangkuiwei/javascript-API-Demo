@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>eval</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>eval</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：eval() 函数计算 JavaScript 字符串，并把它作为脚本代码来执行。
           如果参数是一个表达式，eval() 函数将执行表达式。如果参数是Javascript语句，eval()将执行 Javascript 语句。
@@ -13,10 +13,10 @@
     参数：string	必需。要计算的字符串，其中含有要计算的 JavaScript 表达式或要执行的语句。
     返回值：执行之后的结果
      */
-    let s1 = '2+2';
-    let s2 = 'let x = 10, y = 20 ; console.log(x * y)';
-    console.log(eval(s1));    //4
+    let s1 = '2+2'
+    let s2 = 'let x = 10, y = 20 ; console.log(x * y)'
+    console.log(eval(s1))    //4
     eval(s2)                  //200
-  </script>
-</body>
+    </script>
+  </body>
 </html>

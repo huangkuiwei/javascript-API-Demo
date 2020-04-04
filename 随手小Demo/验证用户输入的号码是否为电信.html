@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>验证用户输入的号码是否为电信</title>
-</head>
-<body>
-  <label for="tele">输入号码：</label>
-  <input type="text" id="tele">
-  <button id="btn">检查是否为电信号码</button>
-  <script>
-    let tele = document.getElementById('tele');
-    let btn = document.getElementById('btn');
+  <head>
+    <meta charset="UTF-8">
+    <title>验证用户输入的号码是否为电信</title>
+  </head>
+  <body>
+    <label for="tele">输入号码：</label>
+    <input type="text" id="tele">
+    <button id="btn">检查是否为电信号码</button>
+    <script>
+    let tele = document.getElementById('tele')
+    let btn = document.getElementById('btn')
     btn.onclick = function () {
-      let val = tele.value;
-      let reg1 = /^1\d{10}$/;
-      let reg2 = /^(133|153|177|181|189)\d{8}$/;
+      let val = tele.value
+      let reg1 = /^1\d{10}$/
+      let reg2 = /^(133|153|177|181|189)\d{8}$/
       if (!val) {
-        alert('请输入号码');
+        alert('请输入号码')
         return
       }
       if (!reg1.test(val)) {
-        alert('您输入的不是电话号码');
+        alert('您输入的不是电话号码')
         return
       }
       if (!reg2.test(val)) {
@@ -29,6 +29,6 @@
         alert('您输入的是电信号码')
       }
     }
-  </script>
-</body>
+    </script>
+  </body>
 </html>

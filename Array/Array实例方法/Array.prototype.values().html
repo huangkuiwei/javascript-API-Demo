@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Array.prototype.values()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.values()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：values() 方法返回一个新的 Array Iterator 对象，该对象包含数组每个索引的值。
     注意：不会改变原数组。
@@ -13,12 +13,12 @@
     参数：无
     返回值：数组的迭代对象
      */
-    let arr1 = [1, 2, 3, 4, 5, 6];
-    let s = arr1.values();
-    console.log(s);                 // 返回数组的迭代对象
-    console.log(s.next().value);    // 1
-    console.log(s.next().value);    // 2
+    let arr1 = [1, 2, 3, 4, 5, 6]
+    let s = arr1.values()
+    console.log(s)                 // 返回数组的迭代对象
+    console.log(s.next().value)    // 1
+    console.log(s.next().value)    // 2
     console.log(s.next().value)     // 3
-  </script>
-</body>
+    </script>
+  </body>
 </html>

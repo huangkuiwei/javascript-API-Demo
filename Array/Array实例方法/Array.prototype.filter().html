@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Array.prototype.filter()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.filter()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。
     注意：filter() 不会对空数组进行检测。filter() 不会改变原始数组。
@@ -18,11 +18,11 @@
                         如果省略了 thisValue ，"this" 的值为 "undefined"
     返回值：返回数组，包含了符合条件的所有元素。如果没有符合条件的元素则返回空数组。
      */
-    let arr1 = [10, 18, 45, 34, 87, 9, 54, 77, 45, 34];
+    let arr1 = [10, 18, 45, 34, 87, 9, 54, 77, 45, 34]
     let newArr1 = arr1.filter(function (item) {
       return item >= 18
-    });
+    })
     console.log(newArr1)      //[18, 45, 34, 87, 54, 77, 45, 34]
-  </script>
-</body>
+    </script>
+  </body>
 </html>

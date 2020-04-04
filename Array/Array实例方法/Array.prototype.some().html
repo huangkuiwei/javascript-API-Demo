@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Array.prototype.some()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.some()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：some() 方法用于检测数组中的元素是否满足指定条件（函数提供）。some() 方法会依次执行数组的每个元素。
           如果有一个元素满足条件，则表达式返回true , 剩余的元素不会再执行检测。
@@ -20,15 +20,15 @@
                                                   如果省略了 thisValue ，"this" 的值为 "undefined"
     返回值：布尔值。如果数组中有元素满足条件返回 true，否则返回 false。
      */
-    let arr1 = [3, 57, 34, 83, 24, 33, 64, 5, 23, 19];
+    let arr1 = [3, 57, 34, 83, 24, 33, 64, 5, 23, 19]
     let s1 = arr1.some(function (item) {
       return item >= 18
-    });
+    })
     let s2 = arr1.some(function (item) {
       return item >= 100
-    });
-    console.log(s1);      //true
+    })
+    console.log(s1)      //true
     console.log(s2)       //false
-  </script>
-</body>
+    </script>
+  </body>
 </html>

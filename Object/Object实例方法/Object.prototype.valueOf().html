@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Object.prototype.valueOf()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Object.prototype.valueOf()</title>
+  </head>
+  <body>
+    <script>
     // valueOf方法的作用是返回一个对象的“值”，默认情况下返回对象本身。
     // valueOf方法的主要用途是，JavaScript 自动类型转换时会默认调用这个方法
-    let obj = {};
-    console.log(obj.valueOf() === obj);        // true
+    let obj = {}
+    console.log(obj.valueOf() === obj)        // true
     console.log(obj + 1)                       // "[object Object]1"
-  </script>
-</body>
+    </script>
+  </body>
 </html>

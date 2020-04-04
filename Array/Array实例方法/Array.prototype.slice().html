@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Array.prototype.slice()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.slice()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：slice() 方法可从已有的数组中返回选定的元素。slice()方法可提取字符串的某个部分，并以新的字符串返回被提取的部分。
     注意：slice() 方法不会改变原始数组。
@@ -18,12 +18,12 @@
     返回值：Array	返回一个新的数组，包含从 start 到 end （不包括该元素）的 arrayObject 中的元素。
     其它：slice方法的一个重要应用，是将类似数组的对象转为真正的数组。
      */
-    let arr1 = [1, 2, 3, 4, 5, 6];
-    let s1 = arr1.slice(2, 5);
-    let s2 = arr1.slice(-2, -1);
-    console.log(s1);          //[3, 4, 5]
-    console.log(s2);          //[5]
+    let arr1 = [1, 2, 3, 4, 5, 6]
+    let s1 = arr1.slice(2, 5)
+    let s2 = arr1.slice(-2, -1)
+    console.log(s1)          //[3, 4, 5]
+    console.log(s2)          //[5]
     console.log(arr1)         //[1, 2, 3, 4, 5, 6]
-  </script>
-</body>
+    </script>
+  </body>
 </html>

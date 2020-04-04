@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Array.prototype.find()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Array.prototype.find()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：find() 方法返回通过测试（函数内判断）的数组的第一个元素的值。
           find() 方法为数组中的每个元素都调用一次函数执行。
@@ -20,11 +20,11 @@
           thisValue     可选。 传递给函数的值一般用 "this" 值。如果这个参数为空， "undefined" 会传递给 "this" 值
      返回值：返回符合测试条件的第一个数组元素值，如果没有符合条件的则返回 undefined。
      */
-    let arr1 = [21, 54, 3, 46, 78, 4, 67, 22, 34];
+    let arr1 = [21, 54, 3, 46, 78, 4, 67, 22, 34]
     let newArr1 = arr1.find(function (item) {
       return item >= 18
-    });
+    })
     console.log(newArr1)      // 21，返回第一个符合条件的值
-  </script>
-</body>
+    </script>
+  </body>
 </html>

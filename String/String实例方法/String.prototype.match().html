@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>String.prototype.match()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>String.prototype.match()</title>
+  </head>
+  <body>
+    <script>
     /*
     作用：match() 方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。
     注意：match() 方法将检索字符串 String Object，以找到一个或多个与 regexp 匹配的文本。
@@ -17,9 +17,9 @@
                         如果该参数不是 RegExp 对象，则需要首先把它传递给 RegExp 构造函数，将其转换为 RegExp 对象。
     返回值：Array	存放匹配结果的数组。该数组的内容依赖于 regexp 是否具有全局标志 g。 如果没找到匹配结果返回 null 。
      */
-    let s = 'this is a text';
-    console.log(s.match(/is/g));      // ['is', 'is']
+    let s = 'this is a text'
+    console.log(s.match(/is/g))      // ['is', 'is']
     console.log(s.match(/hello/g))    // null
-  </script>
-</body>
+    </script>
+  </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Object.prototype.toLocaleSting()</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8">
+    <title>Object.prototype.toLocaleSting()</title>
+  </head>
+  <body>
+    <script>
     // Object.prototype.toLocaleString方法与toString的返回结果相同，也是返回一个值的字符串形式。
     // 这个方法的主要作用是留出一个接口，让各种不同的对象实现自己版本的toLocaleString，用来返回针对某些地域的特定的值。
     // 目前，主要有三个对象自定义了toLocaleString方法。
@@ -13,12 +13,12 @@
     // Number.prototype.toLocaleString()
     // Date.prototype.toLocaleString()
     // 日期的实例对象的toString和toLocaleString返回值就不一样，而且toLocaleString的返回值跟用户设定的所在地域相关。
-    let obj = {};
-    console.log(obj.toString());            // "[object Object]"
-    console.log(obj.toLocaleString());      // "[object Object]"
-    let date = new Date();
-    console.log(date.toString());           // Sat Apr 20 2019 16:29:19 GMT+0800 (中国标准时间)
+    let obj = {}
+    console.log(obj.toString())            // "[object Object]"
+    console.log(obj.toLocaleString())      // "[object Object]"
+    let date = new Date()
+    console.log(date.toString())           // Sat Apr 20 2019 16:29:19 GMT+0800 (中国标准时间)
     console.log(date.toLocaleString())      // 2019/4/20 下午4:29:19
-  </script>
-</body>
+    </script>
+  </body>
 </html>
