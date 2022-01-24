@@ -1,0 +1,23 @@
+{
+  "name": "javascript-api-demo",
+  "version": "1.0.0",
+  "description": "javascript-api-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangkuiwei/javascript-api-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huangkuiwei/javascript-api-demo/issues"
+  },
+  "homepage": "https://github.com/huangkuiwei/javascript-api-demo#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
+}
