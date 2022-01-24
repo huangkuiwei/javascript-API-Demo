@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Date.prototype.toJSON()</title>
   </head>
   <body>
     <script>
-    /*
-    作用：toJSON() 方法可以将 Date 对象转换为字符串，并格式化为 JSON 数据格式。
-          JSON 数据用同样的格式就像x ISO-8601 标准: YYYY-MM-DDTHH:mm:ss.sssZ
-    格式：Date.toJSON()
-    返回值：String	    JSON数据格式的日期
-     */
-    let d = new Date()
-    console.log(d.toJSON())   //2018-11-20T14:28:10.009Z
+      /**
+       * 作用：toJSON() 方法可以将 Date 对象转换为字符串，并格式化为 JSON 数据格式。
+       *      JSON 数据用同样的格式就像x ISO-8601 标准: YYYY-MM-DDTHH:mm:ss.sssZ
+       * 格式：Date.toJSON()
+       * 返回值：String      JSON数据格式的日期
+       */
+      let d = new Date();
+      console.log(d.toJSON()); // 2018-11-20T14:28:10.009Z
     </script>
   </body>
 </html>

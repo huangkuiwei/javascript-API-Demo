@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>decodeURI</title>
   </head>
   <body>
     <script>
-    /*
-    作用：decodeURI() 函数可对 encodeURI() 函数编码过的 URI 进行解码。
-    语法：decodeURI(uri)
-    参数：uri	必需。一个字符串，含有要解码的 URI 或其他要解码的文本。
-     */
-    let s = 'my%20page.html?name=%E5%BC%A0%E4%B8%89&age=24'
-    console.log(decodeURI(s))      //my page.html?name=张三&age=24
+      /**
+       * 作用：decodeURI() 函数可对 encodeURI() 函数编码过的 URI 进行解码。
+       * 语法：decodeURI(uri)
+       * 参数：uri  必需。一个字符串，含有要解码的 URI 或其他要解码的文本。
+       */
+      let s = 'my%20page.html?name=%E5%BC%A0%E4%B8%89&age=24';
+      console.log(decodeURI(s)); // my page.html?name=张三&age=24
     </script>
   </body>
 </html>

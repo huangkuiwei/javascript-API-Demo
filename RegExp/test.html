@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>test</title>
   </head>
   <body>
     <script>
-    /*
-    作用：est() 方法用于检测一个字符串是否匹配某个模式.如果字符串中有匹配的值返回 true ，否则返回 false。
-    语法：RegExpObject.test(string)
-    参数：string	    必需。要检测的字符串。
-    返回值：Boolean   字符串中有匹配的值返回 true ，否则返回 false。
-     */
-    let s = 'this is a text'
-    let reg1 = /is/g
-    let reg2 = /hello/g
-    console.log(reg1.test(s))         //true
-    console.log(reg2.test(s))          //false
+      /**
+       * 作用：est() 方法用于检测一个字符串是否匹配某个模式.如果字符串中有匹配的值返回 true ，否则返回 false。
+       * 语法：RegExpObject.test(string)
+       * 参数：string      必需。要检测的字符串。
+       * 返回值：Boolean   字符串中有匹配的值返回 true ，否则返回 false。
+       */
+      let s = 'this is a text';
+      let reg1 = /is/g;
+      let reg2 = /hello/g;
+      console.log(reg1.test(s)); // true
+      console.log(reg2.test(s)); // false
     </script>
   </body>
 </html>

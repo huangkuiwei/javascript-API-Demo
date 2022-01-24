@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Object.defineProperty()</title>
   </head>
   <body>
     <script>
-    // 通过描述对象，定义或者修改某个属性。
-    // 通过赋值操作（=）添加的普通属性是可枚举的，能够在属性枚举期间呈现出来（for...in 或 Object.keys 方法）， 这些属性的值可以被改变，也可以被删除。
-    // 这个方法允许修改默认的额外选项（或配置）。默认情况下，使用 Object.defineProperty() 添加的属性值是不可修改的。
-    let obj = {}
-    Object.defineProperty(obj, 'name', {
-      enumerable: false,          // 是否可枚举
-      configurable: false,        // 是否可配置
-      writable: false,            // 是否可修改属性值
-      value: 'huang'
-    })
-    console.log(obj)        // {name: "huang"}
+      /**
+       * 通过描述对象，定义或者修改某个属性。
+       * 通过赋值操作（=）添加的普通属性是可枚举的，能够在属性枚举期间呈现出来（for...in 或 Object.keys 方法）， 这些属性的值可以被改变，也可以被删除。
+       * 这个方法允许修改默认的额外选项（或配置）。默认情况下，使用 Object.defineProperty() 添加的属性值是不可修改的。
+       */
+      let obj = {};
+      Object.defineProperty(obj, 'name', {
+        enumerable: false, // 是否可枚举
+        configurable: false, // 是否可配置
+        writable: false, // 是否可修改属性值
+        value: 'huang',
+      });
+      console.log(obj); // {name: "huang"}
     </script>
   </body>
 </html>

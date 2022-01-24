@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Object.defineProperties()</title>
   </head>
   <body>
     <script>
-    // 通过描述对象，定义或修改多个属性。
-    let obj = {}
-    Object.defineProperties(obj, {
-      name: {
-        enumerable: false,
-        configurable: false,
-        writable: false,
-        value: 'huang'
-      },
-      age: {
-        enumerable: false,
-        configurable: false,
-        writable: false,
-        value: 22
-      }
-    })
-    console.log(obj)        // {name: "huang", age: 22}
+      /**
+       * 通过描述对象，定义或修改多个属性。
+       */
+      let obj = {};
+      Object.defineProperties(obj, {
+        name: {
+          enumerable: false,
+          configurable: false,
+          writable: false,
+          value: 'huang',
+        },
+        age: {
+          enumerable: false,
+          configurable: false,
+          writable: false,
+          value: 22,
+        },
+      });
+      console.log(obj); // {name: "huang", age: 22}
     </script>
   </body>
 </html>

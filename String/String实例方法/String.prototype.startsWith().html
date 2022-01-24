@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>String.prototype.startsWith()</title>
   </head>
   <body>
     <script>
-    /*
-    作用：startsWith()方法用来判断当前字符串是否是以另外一个给定的子字符串“开头”的，根据判断结果返回 true 或 false。
-    语法：str.startsWith(searchString [, position])。
-    参数：searchString     必选。要搜索的子字符串。
-          position         可选。在 str 中搜索 searchString 的开始位置，默认值为 0，也就是真正的字符串开头处。
-    返回值：true 或 false。
-     */
-    let s = 'hello world'
-    console.log(s.startsWith('he'))          // true
-    console.log(s.startsWith('wo'))           // false
+      /**
+       * 作用：startsWith()方法用来判断当前字符串是否是以另外一个给定的子字符串“开头”的，根据判断结果返回 true 或 false。
+       * 语法：str.startsWith(searchString [, position])。
+       * 参数：searchString     必选。要搜索的子字符串。
+       *      position         可选。在 str 中搜索 searchString 的开始位置，默认值为 0，也就是真正的字符串开头处。
+       * 返回值：true 或 false。
+       */
+      let s = 'hello world';
+      console.log(s.startsWith('he')); // true
+      console.log(s.startsWith('wo')); // false
     </script>
   </body>
 </html>

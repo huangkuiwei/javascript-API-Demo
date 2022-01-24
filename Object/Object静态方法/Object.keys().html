@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Object.keys()</title>
   </head>
   <body>
     <script>
-    // Object.keys方法的参数是一个对象，返回一个数组。该数组的成员都是该对象自身的（而不是继承的）所有属性名。
-    // Object.keys方法只返回可枚举的属性。
-    let obj = { name: '张三', age: 24, address: '长沙', email: '123456@qq.com' }
-    console.log(Object.keys(obj))       // ["name", "age", "address", "email"]
-    let arr = ['hello', 'world']
-    console.log(Object.keys(arr))        // ["0", "1"]
+      /**
+       * Object.keys方法的参数是一个对象，返回一个数组。该数组的成员都是该对象自身的（而不是继承的）所有属性名。
+       * Object.keys方法只返回可枚举的属性。
+       */
+      let obj = { name: '张三', age: 24, address: '长沙', email: '123456@qq.com' };
+      console.log(Object.keys(obj)); // ["name", "age", "address", "email"]
+      let arr = ['hello', 'world'];
+      console.log(Object.keys(arr)); // ["0", "1"]
     </script>
   </body>
 </html>

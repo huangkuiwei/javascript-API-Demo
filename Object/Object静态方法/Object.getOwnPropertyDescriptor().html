@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Object.getOwnPropertyDescriptor()</title>
   </head>
   <body>
     <script>
-    // 获取某个属性的描述对象。
-    let obj = { name: 'huang' }
-    // {value: "huang", writable: true, enumerable: true, configurable: true}
-    console.log(Object.getOwnPropertyDescriptor(obj, 'name'))
-    let arr = [1, 2, 3]
-    // {value: 3, writable: true, enumerable: false, configurable: false} 数组的 length 属性是不可枚举的。
-    console.log(Object.getOwnPropertyDescriptor(arr, 'length'))
+      /**
+       * 获取某个属性的描述对象。
+       */
+      let obj = { name: 'huang' };
+      // {value: "huang", writable: true, enumerable: true, configurable: true}
+      console.log(Object.getOwnPropertyDescriptor(obj, 'name'));
+      let arr = [1, 2, 3];
+      // {value: 3, writable: true, enumerable: false, configurable: false} 数组的 length 属性是不可枚举的。
+      console.log(Object.getOwnPropertyDescriptor(arr, 'length'));
     </script>
   </body>
 </html>

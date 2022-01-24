@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Array.prototype.entries()</title>
   </head>
   <body>
     <script>
-    /*
-    作用：entries() 方法返回一个数组的迭代对象，该对象包含数组的键值对 (key/value)。
-          迭代对象中数组的索引值作为 key，数组元素作为 value。
-    语法：array.entries()。
-    参数：无
-    返回值：数组迭代对象。
-     */
-    let arr1 = ['apple', 'orange', 'banner']
-    let newArr1 = arr1.entries()
+      /**
+       * 作用：entries() 方法返回一个数组的迭代对象，该对象包含数组的键值对 (key/value)。迭代对象中数组的索引值作为 key，数组元素作为 value。
+       * 语法：array.entries()。
+       * 参数：无
+       * 返回值：数组迭代对象。
+       */
+      let arr1 = ['apple', 'orange', 'banner'];
+      let newArr1 = arr1.entries();
 
-    // for (let item of newArr1) {
-    //   console.log(item)
-    // }
+      // for (let item of newArr1) {
+      //   console.log(item)
+      // }
 
-    console.log(newArr1)                   // 返回一个数组迭代器
-    console.log(newArr1.next())            // {value: [0, 'apple'], done: false}
-    console.log(newArr1.next().value)      // [1, 'orange']
-    console.log(newArr1.next().value)      // [2, 'banner']
-    console.log(newArr1.next())             // {value: undefined, done: true}
+      console.log(newArr1); // 返回一个数组迭代器
+      console.log(newArr1.next()); // {value: [0, 'apple'], done: false}
+      console.log(newArr1.next().value); // [1, 'orange']
+      console.log(newArr1.next().value); // [2, 'banner']
+      console.log(newArr1.next()); // {value: undefined, done: true}
     </script>
   </body>
 </html>

@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>String.prototype.padStart()</title>
   </head>
   <body>
     <script>
-    /*
-    作用：padStart() 方法用另一个字符串填充当前字符串(重复，如果需要的话)，
-          以便产生的字符串达到给定的长度。填充从当前字符串的开始(左侧)应用的。
-    注意：不会改变原字符串。
-    语法：str.padStart(targetLength [, padString])
-    参数：targetLength       必选。当前字符串需要填充到的目标长度。如果这个数值小于当前字符串的长度，则返回当前字符串本身。
-          padString          可选。填充字符串。如果字符串太长，使填充后的字符串长度超过了目标长度，则只保留最左侧的部分，
-                                   其他部分会被截断。此参数的缺省值为 " "（U+0020）。
-    返回值：在原字符串开头填充指定的填充字符串直到目标长度所形成的新字符串。
-     */
-    let s = 'hello'
-    console.log(s.padStart(18, 'hello'))        //hellohellohelhello
-    console.log(s)                               //hello
+      /**
+       * 作用：padStart() 方法用另一个字符串填充当前字符串(重复，如果需要的话)，
+       *      以便产生的字符串达到给定的长度。填充从当前字符串的开始(左侧)应用的。
+       * 注意：不会改变原字符串。
+       * 语法：str.padStart(targetLength [, padString])
+       * 参数：targetLength       必选。当前字符串需要填充到的目标长度。如果这个数值小于当前字符串的长度，则返回当前字符串本身。
+       *      padString          可选。填充字符串。如果字符串太长，使填充后的字符串长度超过了目标长度，则只保留最左侧的部分，
+       *                              其他部分会被截断。此参数的缺省值为 " "（U+0020）。
+       * 返回值：在原字符串开头填充指定的填充字符串直到目标长度所形成的新字符串。
+       */
+      let s = 'hello';
+      console.log(s.padStart(18, 'hello')); // hellohellohelhello
+      console.log(s); // hello
     </script>
   </body>
 </html>

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>isFinite</title>
   </head>
   <body>
     <script>
-    /*
-    作用：该全局 isFinite() 函数用来判断被传入的参数值是否为一个有限数值（finite number）。在必要情况下，参数会首先转为一个数值。
-    语法：isFinite(testValue)
-    参数：testValue      必选。用于检测有限性（finiteness）的值。
-    返回值：Boolean      如果参数是 NaN，正无穷大或者负无穷大，会返回false，其他返回 true。
-     */
-    let s1 = 100
-    let s2 = Infinity
-    let s3 = '100'
-    let s4 = '12hello'
-    console.log(isFinite(s1))       //true
-    console.log(isFinite(s2))       //false
-    console.log(isFinite(s3))       //true     会先转换为数字100
-    console.log(isFinite(s4))        //false    会先转换为数字 NaN（非数字）
+      /**
+       * 作用：该全局 isFinite() 函数用来判断被传入的参数值是否为一个有限数值（finite number）。在必要情况下，参数会首先转为一个数值。
+       * 语法：isFinite(testValue)
+       * 参数：testValue      必选。用于检测有限性（finiteness）的值。
+       * 返回值：Boolean      如果参数是 NaN，正无穷大或者负无穷大，会返回false，其他返回 true。
+       */
+      let s1 = 100;
+      let s2 = Infinity;
+      let s3 = '100';
+      let s4 = '12hello';
+      console.log(isFinite(s1)); // true
+      console.log(isFinite(s2)); // false
+      console.log(isFinite(s3)); // true     会先转换为数字100
+      console.log(isFinite(s4)); // false    会先转换为数字 NaN（非数字）
     </script>
   </body>
 </html>
